@@ -13,6 +13,7 @@ print("Numbers:", numbers)
 print("First value:", numbers[0])
 print("Second value:", numbers[1])
 print("Last value:", numbers[-1])
+print("Last value:", numbers[-1])
 
 # 2. Slicing
 
