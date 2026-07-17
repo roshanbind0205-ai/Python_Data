@@ -5,9 +5,3 @@ print(number[:3])
 print(number[3:])
 print(number[::2])
 print(number[::-1])
-
-name="Roshan"
-
-print(name[0])
-print(name[1:5])
-print(name[::-1])
