@@ -1,16 +1,34 @@
-student = {
-    "name": "Aarav",
-    "math": 86,
-    "science": 91
-}
+while True:
+    print("\n===== CALCULATOR =====")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
 
-print(student["math"])
+    choice = int(input("Enter Choice : "))
 
-student["english"] = 78
-student["math"] = 90
-student["science"]
+    if choice == 5:
+        print("Thank You!")
+        break
 
-print(student.get("history", "Not found"))
+    num1 = float(input("Enter First Number : "))
+    num2 = float(input("Enter Second Number : "))
 
-# for key, value in student.items():
-#     print(key, "=", value)
+    if choice == 1:
+        print("Result =", num1 + num2)
+
+    elif choice == 2:
+        print("Result =", num1 - num2)
+
+    elif choice == 3:
+        print("Result =", num1 * num2)
+
+    elif choice == 4:
+        if num2 != 0:
+            print("Result =", num1 / num2)
+        else:
+            print("Cannot divide by zero")
+
+    else:
+        print("Invalid Choice")
