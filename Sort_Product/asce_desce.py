@@ -1,20 +1,40 @@
+# from functools import cmp_to_key
+# products=[
+#     {"name":"keyboard","price": 800 , "rating": 4.5},
+#     {"name": "mouse", "price": 500, "rating": 4.2},
+#     {"name":"monitor","price": 400,"rating":4.0},
+#     {"name": "USB cable", "price": 1000, "rating": 4.1},
+# ]
+# def compare_products(a,b):
+#     if a["price"] != b["price"]:
+#         return a["price"] - b["price"]
+#     if a["rating"] > b["rating"]:
+#         return -1
+#     elif a["rating"]<b["ratting"]:
+#         return 1
+#     else:
+#         return 0
+        
+# products.sort(key=cmp_to_key(compare_products))
+# for product in products:
+#     print(product["name"],product["price"],product["rating"])
+    
 from functools import cmp_to_key
 products=[
-    {"name":"keyboard","price": 800 , "rating": 4.5},
-    {"name": "mouse", "price": 500, "rating": 4.2},
-    {"name":"monitor","price": 400,"rating":4.0},
-    {"name": "USB cable", "price": 1000, "rating": 4.1},
-]
+    {"name":"keyboard","price":300,"rating":4.5},
+    {"name":"mouse","price":400,"rating":4.3},
+    {"name":"monitor","price":600,"rating":4.9},
+    {"name":"pointer","price":700,"rating":5.1}
+] 
 def compare_products(a,b):
-    if a["price"] != b["price"]:
+    if a["price"] !=b["price"] :
         return a["price"] - b["price"]
     if a["rating"] > b["rating"]:
         return -1
-    elif a["rating"]<b["ratting"]:
+    elif a["rating"] < b["rating"]:
         return 1
     else:
         return 0
-        
 products.sort(key=cmp_to_key(compare_products))
 for product in products:
-    print(product["name"],product["price"],product["rating"])
+    print(product["name"],product["price"],product["rating"])      
